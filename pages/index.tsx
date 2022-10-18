@@ -2,8 +2,8 @@ import React from "react";
 import { ThirdwebSDK } from "@thirdweb-dev/sdk";
 import { useLogout } from "@thirdweb-dev/react";
 import { getUser } from "../auth.config";
-import checkBalance from "../util/checkBalance";
 import styles from "../styles/Home.module.css";
+import checkBalance from "../lib/checkBalance";
 
 export default function Home() {
   const logout = useLogout();

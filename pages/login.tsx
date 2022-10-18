@@ -1,6 +1,6 @@
 import { useAddress, useLogin, Web3Button } from "@thirdweb-dev/react";
+import { contractAddress } from "../lib/constants";
 import styles from "../styles/Home.module.css";
-import {contractAddress} from '../const/yourDetails'
 
 // replace this with your contract address
 
@@ -40,7 +40,7 @@ export default function Login() {
         <button
           className={styles.mainButton}
           style={{ width: 256 }}
-          onClick={login}
+          onClick={() => login()}
         >
           Sign In
         </button>
